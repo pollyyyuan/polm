@@ -8,6 +8,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<div class="content">
+		<div class="content-box">
+			<section id="aboutMe"></section>
+			<section id="repo"></section>
+			<section id="blog"></section>
+			<section id="search"></section>
+		</div>
+	</div>
 	<!-- 头部 -->
 	<header id="header">
 		<div class="logo">
@@ -27,16 +35,17 @@
 	<a class="slide-btn slide-up" icon ></a>
 	<nav id="mainNav">
 		<ul class="layout">
-			<li><a href="#" ><i icon class="nav-aboutMe"></i><span>关于我</span></a></li>
-			<li><a href="#" ><i icon class="nav-repo"></i><span>项目清单</span></a></li>
-			<li><a href="#" ><i icon class="nav-blog"></i><span>随笔</span></a></li>
-			<li><a href="#" ><i icon class="nav-search"></i><span>搜索</span></a></li>
+			<li><a href="#" data-index="0"><i icon class="nav-aboutMe"></i><span>关于我</span></a></li>
+			<li><a href="#" data-index="1"><i icon class="nav-repo"></i><span>项目清单</span></a></li>
+			<li><a href="#" data-index="2"><i icon class="nav-blog"></i><span>随笔</span></a></li>
+			<li><a href="#" data-index="3"><i icon class="nav-search"></i><span>搜索</span></a></li>
 		</ul>
 	</nav>
-	<section></section>
+	
 </body>
 </html>
 <script src="js/zepto.min.js"></script>
 <script src="js/touch.js"></script>
+<script src="js/page.js"></script>
 <script src="js/index.js"></script>
 

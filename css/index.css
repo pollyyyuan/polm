@@ -5,6 +5,7 @@ html,body{
 }
 header{
 	position: fixed;
+	top:0;
 	width: 100%;
 	height: 40px;
 	background-color: #D6433B;
@@ -45,6 +46,7 @@ header{
 	top:40px;
 	left:0;
 	width: 100%;
+	height: 0;
 	background-color: #D6433B;
 	box-sizing: border-box;
 	overflow: hidden;
@@ -150,7 +152,37 @@ i.nav-search::before{
  	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;
 }
-
+/*模块主页显示区*/
+.content{
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 40px 0 50px;
+	overflow: hidden;
+}
+.content-box{
+	z-index: 1;
+	width: 400%;
+	height: 100%;
+	transition: transform .5s;
+}
 section{
-	height: 1000px;
+	float: left;
+	width:25%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+section#aboutMe{
+	background-color: pink;
+}
+section#repo{
+	background-color: green;
+}
+section#blog{
+	background-color: skyblue;
+}
+section#search{
+	background-color: orange;
 }
