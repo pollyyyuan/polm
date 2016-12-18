@@ -119,6 +119,7 @@ header{
 	margin-top:10px;
 	font-size: 12px;
 	font-weight: 400;
+	
 }
 #mainNav i{
 	display: block;
@@ -161,7 +162,6 @@ i.nav-search::before{
 	overflow: hidden;
 }
 .content-box{
-	z-index: 1;
 	width: 400%;
 	height: 100%;
 	transition: transform .5s;

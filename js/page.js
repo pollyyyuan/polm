@@ -74,7 +74,7 @@
 	},
 	//页面移动动画
 	move:function(){
-		this.fullBox.css('transform','translateX(-'+this.lastIndex*this.pageWidth+'px)');
+		this.fullBox.css('-webkit-transform','translateX(-'+this.lastIndex*this.pageWidth+'px)');
 	}
 };
 })(Zepto);
