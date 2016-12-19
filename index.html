@@ -45,6 +45,24 @@
 	
 </body>
 </html>
+<script>
+	var startPos = {x: 0, y: 0, time: +new Date};
+    var isScrolling = 0;// 记录是垂直滚动还是水平滚动
+    document.addEventListener('touchstart', function(event){
+        var touch = event.targetTouches[0];//touches数组对象获得屏幕上所有的touch，取第一个touch
+        startPos.x = touch.pageX;
+        startPos.y = touch.pageY;
+    }, false);
+    document.addEventListener('touchmove', function(event){
+        if(event.targetTouches.length > 1 || event.scale && event.scale !== 1) return;
+        var touchmove = event.targetTouches[0];
+        var endPos = {x:touchmove.pageX - startPos.x, y: touchmove.pageY - startPos.y};
+        isScrolling = Math.abs(endPos.x) < Math.abs(endPos.y) ? 1:0; //isScrolling为1时，表示纵向滑动，0为横向滑动
+        if(isScrolling === 0){
+            event.preventDefault();
+        }
+    }, false);
+</script>
 <script src="js/zepto.min.js"></script>
 <script src="js/touch.js"></script>
 <script src="js/page.js"></script>
