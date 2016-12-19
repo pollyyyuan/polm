@@ -13,15 +13,15 @@
 		$showBox.height(clientHei);
 		var showSlide={
 			showUp:function(){
-				// $showBox.css('height',0);
-				$showBox.css('-webkit-transform','translate3d(0,-'+clientHei+'px,0)');
+				$showBox.css('height',0);
+				// $showBox.css('-webkit-transform','translate3d(0,-'+clientHei+'px,0)');
 				$header.removeClass('header-full');
 				$slideBtn.addClass('slide-down').removeClass('slide-up');
 				// $showBox.css('opacity','0');
 			},
 			showDown:function(){
-				// $showBox.css('height',clientHei+'px');
-				$showBox.css('-webkit-transform','translate3d(0,0,0)');
+				$showBox.css('height',clientHei+'px');
+				// $showBox.css('-webkit-transform','translate3d(0,0,0)');
 				$header.addClass('header-full');
 				$slideBtn.removeClass('slide-down').addClass('slide-up');
 				// $showBox.css('opacity','1');
