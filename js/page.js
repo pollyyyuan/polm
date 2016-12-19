@@ -41,9 +41,10 @@
 	//绑定事件
 	initEvent:function(){
 		var me=this;
-		me.dotBox.on('touchmove', function (event) {
-   		event.preventDefault();
-		}, false);
+		me.fullBox.on('swipeLeft', function (event) {
+   					event.preventDefault();
+				}, false);
+
 		me.dotBox.on('tap',function(){
 			me.lastIndex=$(this).data('index');
 			me.initDot();

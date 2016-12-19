@@ -111,7 +111,7 @@ header{
 #mainNav li{
 	float: left;
 	overflow: hidden;
-	width: 25%;
+	width: 33.33%;
 	text-align: center;
 	font-weight: 700;
 }
@@ -135,10 +135,7 @@ i.nav-repo::before{
 i.nav-blog::before{
 	content:'\e907';
 }
-i.nav-search::before{
-	content:'\e986';
-}
-#mainNav a:hover,#mainNav .nav-active{
+#mainNav .nav-active{
 	color: #D6433B;
 }
 
@@ -173,7 +170,7 @@ section{
 	width:25%;
 	/*height: 100%;*/
 	font-size: 30px;
-	-webkit-overflow-scrolling:touch;
+	/*-webkit-overflow-scrolling:touch;*/
 	box-sizing: border-box;
 	padding-top: 40px;
 	padding-bottom: 50px;
@@ -182,17 +179,13 @@ section{
 }
 section#aboutMe{
 	background-color: pink;
+	height: 1000px;
 }
 section#repo{
 	background-color: green;
-}
+	}
 section#blog{
-	background-color: skyblue;
+	background-color: blue;
 }
-section#search{
-	background-color: orange;
-}
-.list-box{
-	font-size: 30px;
-	/*overflow: scroll;*/
-}
+
+
