@@ -1,5 +1,5 @@
 /*css 初始化 */
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; -webkit-tap-highlight-color:rgba(0,0,0,.3);}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; -webkit-tap-highlight-color:rgba(0,0,0,0);}
 fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
 /*把按钮的蓝色边框去掉*/
 ul, ol,li { list-style:none; }
