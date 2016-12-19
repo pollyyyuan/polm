@@ -50,6 +50,7 @@ header{
 	background-color: #D6433B;
 	box-sizing: border-box;
 	overflow: hidden;
+	-webkit-transform:translate3d(0,0,0);
 	-webkit-transition: all .3s;
 }
 #welcome{
